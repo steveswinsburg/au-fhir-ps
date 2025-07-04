@@ -52,9 +52,59 @@ This use case demonstrates use of patient summary during step 4. Endocrinologist
 1. Based on the review and discussion with Joyce, Dr Cruickshank decides to increase Joyce’s insulin dose and documents the decision in the CIS.
 
 #### Sequence Diagram
-<div> 
-  <img src="uc-referral-seq.png" alt="Sequence Diagram" style="width:80%"/>
-</div>
+```mermaid
+sequenceDiagram;
+  actor Patient;
+  actor GP as Referring GP;
+  participant GP_CIS as GP CIS;
+  participant Directory as Provider Directory;
+  actor Endo as Endocrinologist;
+  participant Endo_CIS as Endocrinologist CIS;
+
+  %% Referral Creation;
+  GP->>GP_CIS: Create referral;
+  GP_CIS->>Directory: Lookup Endocrinologist public key;
+  Directory-->>GP_CIS: Return public key;
+  GP_CIS->>GP_CIS: Encrypt patient summary with public key;
+  GP_CIS->>Endo_CIS: Send referral with encrypted summary;
+
+  %% Endocrinologist Consultation;
+  Patient->>Endo: Attend scheduled consultation;
+  Endo->>Endo_CIS: Open referral;
+  Endo_CIS->>Endo_CIS: Decrypt patient summary using private key;
+  Endo_CIS->>Endo: Display decrypted patient summary;
+
+  %% Alert for Newer Summary;
+  Endo_CIS-->>GP_CIS: Check for newer patient summary;
+  GP_CIS-->>Endo_CIS: Newer summary available (yes/no);
+  Endo_CIS->>Endo: Alert: newer summary available;
+
+  %% Requesting $summary from GP;
+  Endo_CIS->>Endo_CIS: Create and sign $summary request with private key;
+  Endo_CIS->>GP_CIS: Send signed $summary request;
+
+  %% Verifying Request;
+  GP_CIS->>Directory: Lookup Endocrinologist public key;
+  Directory-->>GP_CIS: Return public key;
+  GP_CIS->>GP_CIS: Verify request signature;
+
+  %% Responding with Encrypted Summary;
+  GP_CIS->>Directory: Lookup Endocrinologist public key;
+  Directory-->>GP_CIS: Return public key;
+  GP_CIS->>GP_CIS: Encrypt summary with Endocrinologist's public key;
+  GP_CIS-->>Endo_CIS: Return encrypted summary;
+
+  %% Decrypt and Review Summary;
+  Endo_CIS->>Endo_CIS: Decrypt with private key;
+  Endo_CIS->>Endo: Display updated summary;
+  Endo->>Endo: Compare embedded vs new summary;
+  Endo->>Endo: Review medications and history;
+
+  %% Clinical Decision;
+  Endo->>Endo: Note updated insulin regimen;
+  Endo->>Endo_CIS: Document increased insulin dose;
+```
+
 *Figure 2: Sequence diagram showing access to embedded and updated patient summaries, with secure retrieval using public key cryptography*
 <br/>
 

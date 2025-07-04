@@ -51,9 +51,33 @@ This use case demonstrates use of patient summary during step 5. Patient Summary
 1. The summary supports clinical decision-making during the consultation.
 
 #### Sequence Diagram
-<div> 
-  <img src="uc-interstate-seq.png" alt="Sequence Diagram" style="width:80%"/>
-</div>
+```mermaid
+sequenceDiagram;
+  actor Patient;
+  actor GP as Attending GP;
+  participant Clinic_CIS as Clinic CIS;
+  participant SHL as Smart Health Link;
+  participant PS_Host as Patient Summary Host;
+
+  %% Presentation and Consent;
+  Patient->>GP: Presents at unfamiliar clinic;
+  GP->>Patient: Verify identity<br/>Obtain consent to access records;
+
+  %% Smart Health Link;
+  Patient->>GP: Provide QR code;
+  GP->>Clinic_CIS: Scan QR code;
+  Clinic_CIS->>SHL: Decode Smart Health Link;
+  SHL->>Clinic_CIS: Extract summary URL;
+
+  %% Access Patient Summary;
+  Clinic_CIS->>PS_Host: Request patient summary;
+  PS_Host-->>Clinic_CIS: Return patient summary;
+
+  %% Clinical Use;
+  Clinic_CIS->>GP: Display summary (meds, allergies, history, etc.);
+  GP->>GP: Use information to support clinical decisions;
+```
+
 *Figure 2: Sequence diagram showing access to a patient summary via Smart Health Link*
 <br/>
 
