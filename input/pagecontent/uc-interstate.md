@@ -51,7 +51,7 @@ This use case demonstrates use of patient summary during step 5. Patient Summary
 1. The summary supports clinical decision-making during the consultation.
 
 #### Sequence Diagram
-```mermaid
+<div class="mermaid">
 sequenceDiagram;
   actor Patient;
   actor GP as Attending GP;
@@ -76,7 +76,7 @@ sequenceDiagram;
   %% Clinical Use;
   Clinic_CIS->>GP: Display summary (meds, allergies, history, etc.);
   GP->>GP: Use information to support clinical decisions;
-```
+</div>
 
 *Figure 2: Sequence diagram showing access to a patient summary via Smart Health Link*
 
