@@ -106,7 +106,6 @@ sequenceDiagram;
 ```
 
 *Figure 2: Sequence diagram showing access to embedded and updated patient summaries, with secure retrieval using public key cryptography*
-<br/>
 
 ### Notes
 

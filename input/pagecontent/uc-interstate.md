@@ -79,7 +79,6 @@ sequenceDiagram;
 ```
 
 *Figure 2: Sequence diagram showing access to a patient summary via Smart Health Link*
-<br/>
 
 ### Notes
 
