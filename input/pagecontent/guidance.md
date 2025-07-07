@@ -1,6 +1,7 @@
 - [General Guidance](general-guidance.html)
 - [Sex and Gender](sex-and-gender.html)
 - [AUCDI](aucdi.html)
+- [Exchange Options](exchange-options.html)
 - [Relationship with other IGs](relationship.html)
 - [AU Variance Statement](variance.html)
 - [Comparison with other national and international IGs](comparison.html)

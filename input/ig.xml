@@ -238,6 +238,11 @@
 					<generation value="markdown"/>
 				</page>
 				<page>
+					<nameUrl value="exchange-options.html"/>
+					<title value="Exchange Options"/>
+					<generation value="markdown"/>
+				</page>
+				<page>
 					<nameUrl value="relationship.html"/>
 					<title value="Relationship with other IGs"/>
 					<generation value="markdown"/>
