@@ -650,7 +650,7 @@
     <element id="Composition.section.title">
       <extension url="http://hl7.org/fhir/StructureDefinition/obligation">
         <extension url="code">
-          <valueCode value="SHALL:populate-if-known"/>
+          <valueCode value="SHALL:able-to-populate"/>
         </extension>
         <extension url="actor">
           <valueCanonical value="http://hl7.org.au/fhir/ps/ActorDefinition/au-ps-actor-producer"/>
@@ -1874,7 +1874,7 @@
       <max value="*"/>
       <type>
         <code value="Reference"/>
-        <targetProfile value="http://hl7.org/fhir/uv/ips/StructureDefinition/Condition-uv-ips"/>
+        <targetProfile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-condition"/>
       </type>
     </element>
     <element id="Composition.section:sectionPregnancyHx">
@@ -2061,6 +2061,16 @@
       <type>
         <code value="Reference"/>
         <targetProfile value="http://hl7.org/fhir/StructureDefinition/CarePlan"/>
+      </type>
+    </element>
+    <element id="Composition.section:sectionPlanOfCare.entry:immunizationRecommendation">
+      <path value="Composition.section.entry"/>
+      <sliceName value="immunizationRecommendation"/>
+      <min value="0"/>
+      <max value="*"/>
+      <type>
+        <code value="Reference"/>
+        <targetProfile value="http://hl7.org/fhir/StructureDefinition/ImmunizationRecommendation"/>
       </type>
     </element>
     <element id="Composition.section:sectionSocialHistory">
