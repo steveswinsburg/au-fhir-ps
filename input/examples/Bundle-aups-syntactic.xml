@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="aups-syntactic"/>
+  <meta>
+    <profile value="http://hl7.org.au/fhir/ps/StructureDefinition/au-ps-bundle"/>
+  </meta>
+  <language value="en-AU"/>
+  <identifier>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:uuid:15756130-bf6a-4489-ad44-f39f92e159b8"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2025-08-01T10:15:00.0000000+10:00"/>
+  <entry>
+    <fullUrl value="urn:uuid:514af4c1-194d-48b4-8afe-7be09d3f895a"/>
+    <resource>
+      <Composition>
+        <id value="514af4c1-194d-48b4-8afe-7be09d3f895a"/>
+        <meta>
+          <versionId value="1"/>
+        </meta>
+        <language value="en-AU"/>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="60591-5"/>
+            <display value="Patient summary Document"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="urn:uuid:8e6bcf33-b144-439a-bb90-b9e42362bd2d"/>
+        </subject>
+        <date value="2025-08-01"/>
+        <author>
+          <reference value="urn:uuid:eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4"/>
+        </author>
+        <title value="International Patient Summary"/>
+        <custodian>
+          <reference value="urn:uuid:4ddaab81-42ef-41d6-9115-c9ff1d7b604f"/>
+        </custodian>
+
+        <!-- sections here -->
+        
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:8e6bcf33-b144-439a-bb90-b9e42362bd2d"/>
+    <resource>
+
+
+
+      <Patient>
+        <id value="8e6bcf33-b144-439a-bb90-b9e42362bd2d"/>
+        
+        <extension url="http://hl7.org/fhir/StructureDefinition/individual-pronouns">
+          <extension url="value">
+              <valueCodeableConcept>
+                  <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="LA29519-8"/>
+                      <display value="she/her/her/hers/herself"/>
+                  </coding>
+              </valueCodeableConcept>
+          </extension>
+        </extension>
+        <identifier>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-status">
+              <valueCoding>
+                  <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-status-1"/>
+                  <code value="active"/>
+              </valueCoding>
+          </extension>
+          <extension url="http://hl7.org.au/fhir/StructureDefinition/ihi-record-status">
+              <valueCoding>
+                  <system value="https://healthterminologies.gov.au/fhir/CodeSystem/ihi-record-status-1"/>
+                  <code value="verified"/>
+                  <display value="verified"/>
+              </valueCoding>
+          </extension>
+          <type>
+              <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                  <code value="NI"/>
+              </coding>
+              <text value="IHI"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/hi/ihi/1.0"/>
+          <value value="8003608333647261"/>
+        </identifier>
+        <name>
+            <use value="usual"/>
+            <family value="Banks"/>
+            <given value="Mia"/>
+            <given value="Leanne"/>
+        </name>
+        <telecom>
+            <system value="phone"/>
+            <value value="0270102724"/>
+            <use value="work"/>
+        </telecom>
+        <telecom>
+            <system value="phone"/>
+            <value value="0491574632"/>
+            <use value="mobile"/>
+        </telecom>
+        <telecom>
+            <system value="phone"/>
+            <value value="0270107520"/>
+            <use value="home"/>
+        </telecom>
+        <telecom>
+            <system value="email"/>
+            <value value="mia.banks@myownpersonaldomain.com"/>
+        </telecom>
+        <telecom>
+            <system value="phone"/>
+            <value value="270107520"/>
+            <use value="home"/>
+        </telecom>
+        <gender value="female"/>
+        <birthDate value="1983-08-25"/>
+        <address>
+            <line value="50 Sebastien St"/>
+            <city value="Minjary"/>
+            <state value="NSW"/>
+            <postalCode value="2720"/>
+            <country value="AU"/>
+        </address>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:4ddaab81-42ef-41d6-9115-c9ff1d7b604f"/>
+    <resource>
+      <Organization>
+        <id value="4ddaab81-42ef-41d6-9115-c9ff1d7b604f"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="XX"/>
+            </coding>
+            <text value="ABN"/>
+          </type>
+          <system value="http://hl7.org.au/id/abn"/>
+          <value value="12345678901"/>
+        </identifier>
+        <type>
+          <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="288565001"/>
+            <display value="Medical centre"/>
+          </coding>
+          <text value="Medical Center"/>
+        </type>
+        <name value="Bobrester Medical Center"/>
+        <telecom>
+          <system value="email"/>
+          <value value="info@bobrestermedical.example.com"/>
+          <use value="work"/>
+        </telecom>
+        <telecom>
+          <system value="phone"/>
+          <value value="(07) 5550 2427"/>
+          <use value="work"/>
+        </telecom>
+        <address>
+          <line value="87 Western Esp"/>
+          <city value="Tindal RAAF"/>
+          <state value="QLD"/>
+          <postalCode value="4655"/>
+          <country value="AU"/>
+        </address>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4"/>
+    <resource>
+      <PractitionerRole>
+        <id value="eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4"/>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="EI"/>
+              <display value="Employee number"/>
+            </coding>
+            <text value="Employee Number"/>
+          </type>
+          <system value="http://ns.electronichealth.net.au/id/abn-scoped/service-provider-individual/1.0/12345678901"/>
+          <value value="12345678"/>
+          <assigner>
+              <display value="Bobrester Medical Center"/>
+          </assigner>
+        </identifier>
+        <practitioner>
+            <reference value="urn:uuid:dce50472-2a94-47e6-9501-b52f0df0c813"/>
+        </practitioner>
+        <organization>
+            <reference value="urn:uuid:4ddaab81-42ef-41d6-9115-c9ff1d7b604f"/>
+        </organization>
+        <code>
+            <coding>
+              <system value="http://snomed.info/sct"/>
+              <code value="62247001"/>
+            </coding>
+            <coding>
+              <system value="http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0"/>
+              <code value="253111"/>
+            </coding>
+            <text value="General Practitioner"/>
+        </code>
+        <telecom>
+          <system value="phone"/>
+          <value value="0491579760"/>
+        </telecom>
+        <telecom>
+          <system value="email"/>
+          <value value="drbob@bobrestermedical.example.com"/>
+        </telecom>
+      </PractitionerRole>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="urn:uuid:dce50472-2a94-47e6-9501-b52f0df0c813"/>
+    <resource>
+      <Practitioner>
+        <id value="dce50472-2a94-47e6-9501-b52f0df0c813"/>
+        <name>
+          <family value="Bobrester" />
+          <given value="Bob" />
+          <prefix value="Dr."/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  
+
+  <entry>
+    <fullUrl value="urn:uuid:285af82a-0771-46ed-9bdf-b7e94bbe70dc"/>
+    <resource>
+      <Condition xmlns="http://hl7.org/fhir">
+        <id value="285af82a-0771-46ed-9bdf-b7e94bbe70dc"/>
+        <clinicalStatus>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+                <code value="active"/>
+                <display value="Active"/>
+            </coding>
+        </clinicalStatus>
+        <category>
+            <coding>
+                <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+                <code value="problem-list-item"/>
+                <display value="Problem List Item"/>
+            </coding>
+        </category>
+        <code>
+            <coding>
+                <system value="http://snomed.info/sct"/>
+                <code value="160245001"/>
+                <display value="No current problems or disability"/>
+            </coding>
+        </code>
+        <subject>
+            <reference value="urn:uuid:8e6bcf33-b144-439a-bb90-b9e42362bd2d"/>
+        </subject>
+        <recordedDate value="2024-12-21"/>
+      </Condition>
+    </resource>
+  </entry>
+</Bundle>
