@@ -23,10 +23,6 @@
           "versionId": "1"
         },
         "language": "en-AU",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-AU\" lang=\"en-AU\"><a name=\"Composition_514af4c1-194d-48b4-8afe-7be09d3f895a\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Composition 514af4c1-194d-48b4-8afe-7be09d3f895a</b></p><a name=\"514af4c1-194d-48b4-8afe-7be09d3f895a\"> </a><a name=\"hc514af4c1-194d-48b4-8afe-7be09d3f895a\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">version: 1; Language: en-AU</p></div><p><b>status</b>: Final</p><p><b>type</b>: <span title=\"Codes:{http://loinc.org 60591-5}\">Patient summary Document</span></p><p><b>date</b>: 2025-08-01</p><p><b>author</b>: <a href=\"Bundle-aups-syntactic.html#urn-uuid-eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4\">Bundle: identifier = UUID:15756130-bf6a-4489-ad44-f39f92e159b8; type = document; timestamp = 2025-08-01 10:15:00+1000</a></p><p><b>title</b>: International Patient Summary</p><p><b>custodian</b>: <a href=\"Bundle-aups-syntactic.html#urn-uuid-4ddaab81-42ef-41d6-9115-c9ff1d7b604f\">Bundle: identifier = UUID:15756130-bf6a-4489-ad44-f39f92e159b8; type = document; timestamp = 2025-08-01 10:15:00+1000</a></p></div>"
-        },
         "status": "final",
         "type": {
           "coding": [
@@ -51,6 +47,23 @@
           "reference": "urn:uuid:4ddaab81-42ef-41d6-9115-c9ff1d7b604f"
         },
         "section": [
+          {
+            "title": "Allergies",
+            "code": {
+              "coding": [
+                {
+                  "system": "http://loinc.org",
+                  "code": "48765-2",
+                  "display": "Allergies and adverse reactions Document"
+                }
+              ]
+            },
+            "entry": [
+              {
+                "reference": "urn:uuid:a3530a05-0cd4-483d-97b3-7467285c6b84"
+              }
+            ]
+          },
           {
             "title": "Problem List",
             "code": {
@@ -204,10 +217,7 @@
       "resource": {
         "resourceType": "Organization",
         "id": "4ddaab81-42ef-41d6-9115-c9ff1d7b604f",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Organization_4ddaab81-42ef-41d6-9115-c9ff1d7b604f\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Organization 4ddaab81-42ef-41d6-9115-c9ff1d7b604f</b></p><a name=\"4ddaab81-42ef-41d6-9115-c9ff1d7b604f\"> </a><a name=\"hc4ddaab81-42ef-41d6-9115-c9ff1d7b604f\"> </a><p><b>identifier</b>: ABN/12345678901</p><p><b>type</b>: <span title=\"Codes:{http://snomed.info/sct 288565001}\">Medical Center</span></p><p><b>name</b>: Bobrester Medical Center</p><p><b>telecom</b>: <a href=\"mailto:info@bobrestermedical.example.com\">info@bobrestermedical.example.com</a>, ph: (07) 5550 2427(Work)</p><p><b>address</b>: 87 Western Esp Tindal RAAF QLD 4655 AU </p></div>"
-        },
+       
         "identifier": [
           {
             "type": {
@@ -266,10 +276,6 @@
       "resource": {
         "resourceType": "PractitionerRole",
         "id": "eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"PractitionerRole_eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4\"> </a><p class=\"res-header-id\"><b>Generated Narrative: PractitionerRole eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4</b></p><a name=\"eb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4\"> </a><a name=\"hceb2b7ea3-2ce9-4f9e-b44b-7442c4cd01b4\"> </a><p><b>identifier</b>: Employee Number/12345678</p><p><b>practitioner</b>: <a href=\"Bundle-aups-basicsummary.html#urn-uuid-dce50472-2a94-47e6-9501-b52f0df0c813\">Bundle: identifier = UUID:0bd27fed-5f11-4344-beeb-c3b78c00f604; type = document; timestamp = 2025-02-05 19:33:11+1000</a></p><p><b>organization</b>: <a href=\"Bundle-aups-syntactic.html#urn-uuid-4ddaab81-42ef-41d6-9115-c9ff1d7b604f\">Bundle: identifier = UUID:15756130-bf6a-4489-ad44-f39f92e159b8; type = document; timestamp = 2025-08-01 10:15:00+1000</a></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 62247001}, {http://www.abs.gov.au/ausstats/abs@.nsf/mf/1220.0 253111}\">General Practitioner</span></p><p><b>telecom</b>: ph: 0491579760, <a href=\"mailto:drbob@bobrestermedical.example.com\">drbob@bobrestermedical.example.com</a></p></div>"
-        },
         "identifier": [
           {
             "type": {
@@ -327,10 +333,6 @@
       "resource": {
         "resourceType": "Practitioner",
         "id": "dce50472-2a94-47e6-9501-b52f0df0c813",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Practitioner_dce50472-2a94-47e6-9501-b52f0df0c813\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Practitioner dce50472-2a94-47e6-9501-b52f0df0c813</b></p><a name=\"dce50472-2a94-47e6-9501-b52f0df0c813\"> </a><a name=\"hcdce50472-2a94-47e6-9501-b52f0df0c813\"> </a><p><b>name</b>: Bob Bobrester </p></div>"
-        },
         "name": [
           {
             "family": "Bobrester",
@@ -345,14 +347,33 @@
       }
     },
     {
+      "fullUrl": "urn:uuid:a3530a05-0cd4-483d-97b3-7467285c6b84 ",
+      "resource": {
+        "resourceType": "AllergyIntolerance",
+        "id": "a3530a05-0cd4-483d-97b3-7467285c6b84",
+        "type": "allergy",
+        "code": {
+          "coding": [
+            {
+              "system": "http://snomed.info/sct",
+              "code": "716186003",
+              "display": "No known allergy"
+            }
+          ],
+          "text": "No known allergies"
+        },
+        "patient": {
+          "reference": "urn:uuid:8e6bcf33-b144-439a-bb90-b9e42362bd2d"
+        },
+        "recordedDate": "2025-06-05"
+      }
+    },
+    {
       "fullUrl": "urn:uuid:285af82a-0771-46ed-9bdf-b7e94bbe70dc",
       "resource": {
         "resourceType": "Condition",
         "id": "285af82a-0771-46ed-9bdf-b7e94bbe70dc",
-        "text": {
-          "status": "generated",
-          "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><a name=\"Condition_285af82a-0771-46ed-9bdf-b7e94bbe70dc\"> </a><p class=\"res-header-id\"><b>Generated Narrative: Condition 285af82a-0771-46ed-9bdf-b7e94bbe70dc</b></p><a name=\"285af82a-0771-46ed-9bdf-b7e94bbe70dc\"> </a><a name=\"hc285af82a-0771-46ed-9bdf-b7e94bbe70dc\"> </a><p><b>clinicalStatus</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-clinical active}\">Active</span></p><p><b>category</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/condition-category problem-list-item}\">Problem List Item</span></p><p><b>code</b>: <span title=\"Codes:{http://snomed.info/sct 160245001}\">No current problems or disability</span></p><p><b>subject</b>: <a href=\"Bundle-aups-syntactic.html#urn-uuid-8e6bcf33-b144-439a-bb90-b9e42362bd2d\">Bundle: identifier = UUID:15756130-bf6a-4489-ad44-f39f92e159b8; type = document; timestamp = 2025-08-01 10:15:00+1000</a></p><p><b>recordedDate</b>: 2024-12-21</p></div>"
-        },
+       
         "clinicalStatus": {
           "coding": [
             {
@@ -509,7 +530,7 @@
         ],
         "dosage": [
           {
-            "text": "Take 10 mL every 4 hours",
+            "text": "Take 10 mL every 4 hours"
           }
         ]
       }
@@ -566,7 +587,7 @@
               }
             }
           }
-        ],
+        ]
       }
     },
     {
