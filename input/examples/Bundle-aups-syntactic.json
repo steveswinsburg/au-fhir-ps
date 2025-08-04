@@ -60,7 +60,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Allergies</h3><ul><li>Allergy: No known allergies</li></ul></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>No known allergies</li></ul></div>"
             },    
             "entry": [
               {
@@ -81,7 +81,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Problem List</h3><ul><li>Condition: Acute bronchitis (Severity: Moderate, Abatement: 2025-07-01)</li></ul></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Condition: Acute bronchitis (Severity: Moderate, Abatement: 2025-07-01)</li></ul></div>"
             },
             "entry": [
               {
@@ -102,7 +102,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Medications</h3><ul><li>Medication: Ibuprofen 200 mg capsules – Take two capsules with water, three times daily</li><li>Medication: Benadryl PE Dry Cough and Nasal Congestion oral liquid – Take 10 mL every 4 hours</li></ul></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Medication: Ibuprofen 200 mg capsules – Take two capsules with water, three times daily</li><li>Medication: Benadryl PE Dry Cough and Nasal Congestion oral liquid – Take 10 mL every 4 hours</li></ul></div>"
             },
             "entry": [
               {
