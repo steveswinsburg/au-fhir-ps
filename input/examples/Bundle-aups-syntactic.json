@@ -126,7 +126,7 @@
             },
             "text": {
               "status": "generated",
-              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Vital Signs</h3><ul><li>Body temperature: 37.5 C</li><li>Weight: 88.6 kg</li><li>Respiratory rate: 22 breaths/minute</li></ul></div>"
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Body temperature: 37.5 C</li><li>Weight: 88.6 kg</li><li>Respiratory rate: 22 breaths/minute</li></ul></div>"
             },
             "entry": [
               {
