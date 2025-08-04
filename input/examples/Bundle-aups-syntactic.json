@@ -58,6 +58,10 @@
                 }
               ]
             },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Allergies</h3><ul><li>Allergy: No known allergies</li></ul></div>"
+            },    
             "entry": [
               {
                 "reference": "urn:uuid:a3530a05-0cd4-483d-97b3-7467285c6b84"
@@ -75,6 +79,10 @@
                 }
               ]
             },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Problem List</h3><ul><li>Condition: Acute bronchitis (Severity: Moderate, Abatement: 2025-07-01)</li></ul></div>"
+            },
             "entry": [
               {
                 "reference": "urn:uuid:285af82a-0771-46ed-9bdf-b7e94bbe70dc"
@@ -91,6 +99,10 @@
                   "display": "History of Medication use Narrative"
                 }
               ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Medications</h3><ul><li>Medication: Ibuprofen 200 mg capsules – Take two capsules with water, three times daily</li><li>Medication: Benadryl PE Dry Cough and Nasal Congestion oral liquid – Take 10 mL every 4 hours</li></ul></div>"
             },
             "entry": [
               {
@@ -111,6 +123,10 @@
                   "display": "Vital signs"
                 }
               ]
+            },
+            "text": {
+              "status": "generated",
+              "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Vital Signs</h3><ul><li>Body temperature: 37.5 C</li><li>Weight: 88.6 kg</li><li>Respiratory rate: 22 breaths/minute</li></ul></div>"
             },
             "entry": [
               {
@@ -480,7 +496,7 @@
         "id": "3f76e819-1f30-405d-b1ef-66c878b401c2",
         "status": "active",
         "medicationReference": {
-          "reference": "urn:uuid:c0da940c-8d6b-402a-95dd-75f93317f400"
+          "reference": "urn:uuid:f8b8e145-141c-480f-aef3-144ed22c7c64"
         },
         "subject": {
           "reference": "urn:uuid:8e6bcf33-b144-439a-bb90-b9e42362bd2d"
@@ -785,7 +801,7 @@
               "code": "27113001"
             }
           ],
-          "text": "weight"
+          "text": "Weight"
         },
         "subject": {
           "reference": "urn:uuid:8e6bcf33-b144-439a-bb90-b9e42362bd2d"
